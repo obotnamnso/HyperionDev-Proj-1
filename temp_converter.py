@@ -13,7 +13,9 @@ unit_of_measurement = input(''' What are the unit of measurement?
 
 if unit_of_measurement == '1':
     result = celsius_to_kelvin(temp)
-else:
+elif unit_of_measurement == '2':
     result = kelvin_to_celsius(temp) 
+else:
+    print('Wrong input select either 1 or 2')
 
 print(f'Your temperature converted is: {result}')
